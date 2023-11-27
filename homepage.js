@@ -86,7 +86,7 @@ import scale from "../../public/scale.png";
 import sync from "../../public/sync.png";
 import home from "../../public/vfhome.gif";
 
-const Hero = () => (
+const homepage = () => (
   <div className="software-company-website">
     <div className="hero-wrapper">
       <div className="hero-wrapper-text">
@@ -316,4 +316,4 @@ const Hero = () => (
   </div>
 );
 
-export default Hero;
+export default homepage;
