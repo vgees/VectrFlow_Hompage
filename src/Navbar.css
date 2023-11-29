@@ -25,26 +25,63 @@
 
 /* Login button styles */
 /* Login button styles */
-.login-container {
+/* NavbarButtons.css */
+.buttons-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.login-button,
+.signup-button {
+    padding: 10px 20px;
+    /* Adjust padding as needed */
+    background: linear-gradient(90deg, #3864B3 0%, #2F5597 31%, #EC73FF 83%);
+    /* Add linear gradient as specified */
+    color: #ffffff;
+    /* Adjust button text color as needed */
+    border: 1px solid #3864B3;
+    /* Add solid border with the first color of the gradient */
+    border-radius: 5px;
+    /* Adjust border-radius as needed */
+    cursor: pointer;
     margin-left: 20px;
+    /* Adjust margin between buttons as needed */
+    transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;
+    /* Add smooth transition */
+}
+
+.login-button:hover,
+.signup-button:hover {
+    background: linear-gradient(90deg, #3864B3 0%, #2F5597 31%, #EC73FF 83%);
+    /* Adjust gradient as needed */
+    color: #ffffff;
+    /* Adjust text color on hover as needed */
+}
+
+.signup-button {
+    padding: 10px 20px;
+    /* Adjust padding for Signup button */
+}
+
+
+/* NavbarLinks.css */
+.links-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 850px;
     /* Adjust margin as needed */
 }
 
-.login-button {
-    padding: 12px 24px;
-    /* Adjust padding as needed for a larger button */
-    background: linear-gradient(90deg, #3864B3 0%, #2F5597 31%, #EC73FF 83%);
-    /* Gradient colors and positions */
-    color: #ffffff;
-    /* Adjust button text color as needed */
-    border: none;
-    border-radius: 8px;
-    /* Pointy edges */
-    /* Adjust border-radius as needed */
-    cursor: pointer;
+.navbar-link {
+    color: rgb(20, 98, 143);
+    /* Adjust link color as needed */
+    text-decoration: none;
+    margin-right: 20px;
+    /* Adjust margin between links as needed */
 }
 
-.login-button:hover {
-    background-color: #b3b3b3;
-    /* Adjust button hover background color as needed */
+.navbar-link:hover {
+    text-decoration: underline;
 }
