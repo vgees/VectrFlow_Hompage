@@ -18,7 +18,7 @@
 }
 
 .logo {
-    width: 150px;
+    width: 170px;
     /* Adjust logo width as needed */
     height: auto;
 }
@@ -35,53 +35,47 @@
 .login-button,
 .signup-button {
     padding: 10px 20px;
-    /* Adjust padding as needed */
-    background: linear-gradient(90deg, #3864B3 0%, #2F5597 31%, #EC73FF 83%);
-    /* Add linear gradient as specified */
-    color: #ffffff;
-    /* Adjust button text color as needed */
-    border: 1px solid #3864B3;
-    /* Add solid border with the first color of the gradient */
+    background: #ffffff;
+    color: #3864B3;
+    border: 1px solid;
+    border-image: linear-gradient(90deg, #3864B3 0%, #2F5597 31%, #EC73FF 83%);
+    border-image-slice: 1;
     border-radius: 5px;
-    /* Adjust border-radius as needed */
     cursor: pointer;
     margin-left: 20px;
-    /* Adjust margin between buttons as needed */
-    transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;
-    /* Add smooth transition */
+    transition: background 0.3s ease, color 0.3s ease, border-image 0.3s ease;
 }
 
 .login-button:hover,
 .signup-button:hover {
     background: linear-gradient(90deg, #3864B3 0%, #2F5597 31%, #EC73FF 83%);
-    /* Adjust gradient as needed */
     color: #ffffff;
-    /* Adjust text color on hover as needed */
+    border-image: linear-gradient(270deg, #3864B3 0%, #2F5597 31%, #EC73FF 83%);
 }
-
-.signup-button {
-    padding: 10px 20px;
-    /* Adjust padding for Signup button */
-}
-
 
 /* NavbarLinks.css */
 .links-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 850px;
+    margin-right: 0px;
     /* Adjust margin as needed */
 }
 
 .navbar-link {
     color: rgb(20, 98, 143);
-    /* Adjust link color as needed */
+    font-family: 'Barlow', sans-serif;
+    /* Add Barlow font or adjust the font as needed */
+    font-weight: bold;
+    /* Make the text a little bold */
     text-decoration: none;
     margin-right: 20px;
-    /* Adjust margin between links as needed */
+    transition: color 0.3s ease;
+    /* Add smooth transition for color */
 }
 
 .navbar-link:hover {
     text-decoration: underline;
+    color: linear-gradient(90deg, #3864B3 0%, #2F5597 31%, #EC73FF 83%);
+    /* Apply the specified gradient on hover */
 }

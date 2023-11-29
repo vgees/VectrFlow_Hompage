@@ -29,7 +29,7 @@ const Navbar = () => {
             {/* Buttons on the right */}
             <div className="buttons-container">
                 <button className="login-button" onClick={() => console.log("Login clicked")}>
-                    Login
+                    Signin
                 </button>
                 <button className="signup-button" onClick={() => console.log("Signup clicked")}>
                     Signup

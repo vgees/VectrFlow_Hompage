@@ -1,6 +1,6 @@
 
 import LC from ".//public/LC.png";
-import build from ".//public/Vfb.png";
+import build from ".//public/dark.png";
 import drag from ".//public/drag.png";
 import emb from ".//public/embeddings.png";
 import pipe from ".//public/pipe.png";
