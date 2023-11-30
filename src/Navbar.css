@@ -23,15 +23,6 @@
     height: auto;
 }
 
-/* Login button styles */
-/* Login button styles */
-/* NavbarButtons.css */
-.buttons-container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
 .login-button,
 .signup-button {
     padding: 10px 20px;
@@ -53,11 +44,64 @@
     border: 2px solid;
     border-image: linear-gradient(270deg, #3864B3 0%, #2F5597 31%, #EC73FF 83%);
     border-image-slice: 1;
-    font-weight: bold;
+
     /* Add this line to make the text bold on hover */
 }
 
+/* Login button styles */
+/* Login button styles */
+/* NavbarButtons.css */
+.buttons-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 
+/* Dropdown styles */
+/* ... Your existing styles ... */
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    font-family: 'Barlow', sans-serif;
+    /* Add this line to set the font to Barlow */
+    font-weight: bold;
+    /* Add this line to make the text bold */
+    color: #3864B3;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.icon {
+    width: 25px;
+    /* Adjust the width as needed */
+    height: 16px;
+    /* Adjust the height as needed */
+    margin-right: 8px;
+    /* Adjust the margin as needed */
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
 /* NavbarLinks.css */
 .links-container {

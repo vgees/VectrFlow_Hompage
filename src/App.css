@@ -706,5 +706,5 @@
 .additional-text {
   font-family: 'Barlow', sans-serif;
   font-weight: bold;
-  color: var(--gray-gray-700, rgb(0, 0, 0));
+  color: var(--gray-gray-700, rgb(75, 75, 75));
 }
