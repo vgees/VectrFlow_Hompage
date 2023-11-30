@@ -142,14 +142,11 @@
 }
 
 .btn-primary:hover {
-  background: linear-gradient(225deg,
-      rgba(56, 100, 179, 1) 0%,
-      /* Color: #3864B3 */
-      rgba(47, 85, 151, 1) 31%,
-      /* Color: #2F5597 */
-      rgba(236, 115, 255, 1) 83%
-      /* Color: #EC73FF */
-    );
+  background: #ffffff;
+  color: #3864B3;
+  border: 2px solid;
+  border-image: linear-gradient(270deg, #3864B3 0%, #2F5597 31%, #EC73FF 83%);
+  border-image-slice: 1;
 }
 
 .let-s-get-started {
@@ -708,5 +705,5 @@
 .additional-text {
   font-family: 'Barlow', sans-serif;
   font-weight: bold;
-  color: var(--gray-gray-700, rgb(157, 93, 206));
+  color: var(--gray-gray-700, rgb(0, 0, 0));
 }

@@ -48,10 +48,14 @@
 
 .login-button:hover,
 .signup-button:hover {
-    background: linear-gradient(90deg, #3864B3 0%, #2F5597 31%, #EC73FF 83%);
-    color: #ffffff;
+    background: #ffffff;
+    color: #3864B3;
+    border: 1px solid;
     border-image: linear-gradient(270deg, #3864B3 0%, #2F5597 31%, #EC73FF 83%);
+    border-image-slice: 1;
 }
+
+
 
 /* NavbarLinks.css */
 .links-container {
@@ -66,7 +70,7 @@
     color: rgb(20, 98, 143);
     font-family: 'Barlow', sans-serif;
     /* Add Barlow font or adjust the font as needed */
-    font-weight: bold;
+
     /* Make the text a little bold */
     text-decoration: none;
     margin-right: 20px;
