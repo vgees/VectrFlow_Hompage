@@ -29,10 +29,10 @@ const Navbar = () => {
             {/* Buttons on the right */}
             <div className="buttons-container">
                 <button className="login-button" onClick={() => console.log("Login clicked")}>
-                    Signin
+                    Sign in
                 </button>
                 <button className="signup-button" onClick={() => console.log("Signup clicked")}>
-                    Signup
+                    Sign up
                 </button>
             </div>
         </div>
