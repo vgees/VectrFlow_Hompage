@@ -3,7 +3,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import NavBar from './NavBar';
 import SignIn from './SignIn';
-
+import Home from './App';
 import SignUp from './SignUp';
 
 const AppRoutes = () => {
@@ -11,7 +11,7 @@ const AppRoutes = () => {
         <Routes>
             <Route path="/SignIn" element={<SignIn />} />
             <Route path="/SignUp" element={<SignUp />} /> {/* Add this line */}
-
+            <Route path="/" element={<Home />} />
         </Routes>
     );
 };
