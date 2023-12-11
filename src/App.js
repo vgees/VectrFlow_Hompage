@@ -7,6 +7,8 @@ import pipe from ".//public/pipe.png";
 import scale from ".//public/scale.png";
 import sync from ".//public/sync.png";
 import home from ".//public/vfhome.gif";
+import React from "react";
+import { Link } from "react-router-dom";
 import "./App.css";
 
 const App = () => (
@@ -31,7 +33,9 @@ const App = () => (
           </div>
         </div>
         <div className="btn-primary">
-          <div className="let-s-get-started">Let’s get started!</div>
+          <Link to="/pricing" className="let-s-get-started">
+            Let’s get started!
+          </Link>
         </div>
         <div className="additional-text">
           A SaaS based low code ETL pipeline for creating high-quality vector

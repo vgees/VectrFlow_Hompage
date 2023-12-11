@@ -125,7 +125,7 @@
 }
 
 .navbar-link:hover {
-    text-decoration: underline;
+
     color: linear-gradient(90deg, #3864B3 0%, #2F5597 31%, #EC73FF 83%);
     /* Apply the specified gradient on hover */
 }

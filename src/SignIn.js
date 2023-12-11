@@ -14,10 +14,37 @@ import Grid from '@mui/material/Grid';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
+import googleIcon from './public/google.svg';
+import githubIcon from './public/github.svg';
 function SignIn() {
     const theme = createTheme();
     const navigate = useNavigate();
+
+    const handleLoginGoogle = async () => {
+        const provider = new firebase.auth.GoogleAuthProvider();
+        try {
+            const result = await firebase.auth().signInWithPopup(provider);
+            const user = result.user;
+            console.log("User signed in with Google:", user);
+            navigate('/');
+        } catch (error) {
+            console.error("Error during Google sign in:", error);
+        }
+    };
+
+    const handleLoginGithub = async () => {
+        const provider = new firebase.auth.GithubAuthProvider();
+        try {
+            const result = await firebase.auth().signInWithPopup(provider);
+            const user = result.user;
+            console.log("User signed in with GitHub:", user);
+            navigate('/');
+        } catch (error) {
+            console.error("Error during GitHub sign in:", error);
+        }
+    };
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -93,6 +120,25 @@ function SignIn() {
                             />
                             <Button type="submit" fullWidth variant="contained" sx={{ mt: 3, mb: 2 }}>
                                 Sign In
+                            </Button>
+                            <Button
+                                fullWidth
+                                variant="contained"
+                                sx={{ mt: 1, mb: 2, backgroundColor: "#FFFFFF", color: "#000000" }}
+                                onClick={handleLoginGoogle}
+                                startIcon={<img src={googleIcon} alt="Google Icon" className="icon" />}  // Using the imported icon
+                            >
+                                Sign In with Google
+                            </Button>
+
+                            <Button
+                                fullWidth
+                                variant="contained"
+                                sx={{ mt: 1, mb: 2, color: "#000000", backgroundColor: "#FFFFFF" }}
+                                onClick={handleLoginGithub}
+                                startIcon={<img src={githubIcon} alt="GitHub Icon" className="icon" />}  // Using the imported icon
+                            >
+                                Sign In with GitHub
                             </Button>
                             <Grid container>
                                 <Grid item xs>
