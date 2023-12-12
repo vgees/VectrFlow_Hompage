@@ -6,7 +6,7 @@ import emb from ".//public/embeddings.png";
 import pipe from ".//public/pipe.png";
 import scale from ".//public/scale.png";
 import sync from ".//public/sync.png";
-import home from ".//public/vfhome.gif";
+import home from ".//public/VectrFlowNew.png";
 import React from "react";
 import { Link } from "react-router-dom";
 import "./App.css";

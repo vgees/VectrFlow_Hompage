@@ -29,7 +29,7 @@
     background: #ffffff;
     color: #3864B3;
     border: 2px solid;
-    border-image: linear-gradient(90deg, #3864B3 0%, #2F5597 31%, #EC73FF 83%);
+    border-image: linear-gradient(90deg, #3864B3 0%, #2F5597 31%, #e9288f 83%);
     border-image-slice: 1;
     border-radius: 5px;
     cursor: pointer;
@@ -42,7 +42,7 @@
     background: #ffffff;
     color: #3864B3;
     border: 2px solid;
-    border-image: linear-gradient(270deg, #3864B3 0%, #2F5597 31%, #EC73FF 83%);
+    border-image: linear-gradient(270deg, #3864B3 0%, #2F5597 31%, #e9288f 83%);
     border-image-slice: 1;
 
     /* Add this line to make the text bold on hover */

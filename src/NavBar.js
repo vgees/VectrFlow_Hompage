@@ -2,7 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import logoPath from "./public/flowise_logo.png";
+import logoPath from "./public/Vectrflow.png";
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth'
 import 'firebase/compat/firestore';
@@ -27,7 +27,7 @@ const Navbar = () => {
 
       {/* Links beside the logo */}
       <div className="links-container">
-        <Link to="/about" className="navbar-link">
+        <Link to="/AboutUs" className="navbar-link">
           About Us
         </Link>
         <Link to="/documentation" className="navbar-link">

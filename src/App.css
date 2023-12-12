@@ -58,7 +58,7 @@
   background-image: linear-gradient(90deg,
       rgba(56, 100, 179, 1) 0%,
       rgba(47, 85, 151, 1) 31%,
-      rgba(236, 115, 255, 1) 83%);
+      #e9288f 83%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font: 1000 45px/71px "Inter", sans-serif;
@@ -68,7 +68,7 @@
   background-image: linear-gradient(90deg,
       rgba(56, 100, 179, 1) 0%,
       rgba(47, 85, 151, 1) 31%,
-      rgba(236, 115, 255, 1) 83%);
+      #e9288f 83%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font: var(--headings-lite-h-1, 300 45px/71px "Inter", sans-serif);
@@ -89,7 +89,7 @@
   background-image: linear-gradient(90deg,
       rgba(56, 100, 179, 1) 0%,
       rgba(47, 85, 151, 1) 31%,
-      rgba(236, 115, 255, 1) 83%);
+      #e9288f 83%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font: var(--display-display-dilplay-h-1-bold,
@@ -102,7 +102,7 @@
   background-image: linear-gradient(90deg,
       rgba(56, 100, 179, 1) 0%,
       rgba(47, 85, 151, 1) 31%,
-      rgba(236, 115, 255, 1) 83%);
+      #e9288f 83%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font: var(--display-display-dilplay-h-1-bold,
@@ -124,7 +124,7 @@
   position: relative;
   background: rgb(248, 248, 248);
   border: 2px solid transparent;
-  border-image: linear-gradient(90deg, #3864b3 0%, #2f5597 31%, #ec73ff 83%);
+  border-image: linear-gradient(90deg, #3864b3 0%, #2f5597 31%, #e9288f 83%);
   border-image-slice: 1;
   border-radius: 0px;
   /* Adjust the border-radius to make the edges round */
@@ -262,9 +262,12 @@
 }
 
 .finding-the-right-talent-is-not-easy-we-help-you-find-the-talent-that-suits-your-needs-follows-your-processes-and-sticks-with-you-long-term-not-the-case-with-freelancers {
-  color: var(--gray-gray-800, #2d3748);
+  font-family: 'Barlow', sans-serif !important;
+  font-weight: bold !important;
+  color: #4b4b4b;
+  /* RGB value for rgb(75, 75, 75) */
   text-align: left;
-  font: var(--paragraphs-para-1, 400 18px/30px "Inter", sans-serif);
+  font: 400 15px/23px "Inter", sans-serif;
   position: relative;
   width: 534px;
   height: 113px;
