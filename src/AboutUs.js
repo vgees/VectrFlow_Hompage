@@ -2,10 +2,10 @@ import React from "react";
 import "./AboutUs.css";
 import mission from "./public/mission.png";
 import approach from "./public/approach.png";
-import vfe from "./public/vfe.png";
-import qa from "./public/qa.png";
-import collab from "./public/collab.png";
-import exp from "./public/exp.png";
+import vfe from "./public/freeflow.png";
+import qa from "./public/quality.svg";
+import collab from "./public/collaboration.svg";
+import exp from "./public/expertise.svg";
 const AboutUs = () => {
     return (
         <div className="about-us">
@@ -105,7 +105,7 @@ const AboutUs = () => {
                 </div>
                 <div className="frame-25">
                     <div className="frame-26">
-                        <div className="text-wrapper-11">Why choos VectrFlow?</div>
+                        <div className="text-wrapper-11">Why choose VectrFlow?</div>
                         {/* <img className="frame-23" alt="Frame" src="frame-11.svg" /> */}
                     </div>
                     <div className="frame-27">

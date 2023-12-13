@@ -37,6 +37,12 @@
     transition: background 0.3s ease, color 0.3s ease, border-image 0.3s ease;
 }
 
+/* Navbar.css */
+.login-button {
+    text-decoration: none;
+    /* Remove underline */
+}
+
 .login-button:hover,
 .signup-button:hover {
     background: #ffffff;

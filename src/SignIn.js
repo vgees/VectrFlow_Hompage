@@ -15,7 +15,7 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import googleIcon from './public/google.svg';
 import githubIcon from './public/github.svg';
-
+import './SignIn.css';
 function SignIn() {
     const theme = createTheme();
 
@@ -88,24 +88,27 @@ function SignIn() {
                         </Typography>
                         <Box sx={{ mt: 1 }}>
                             <Button
+                                className="Button-google"  // Add the class name
                                 fullWidth
                                 variant="contained"
-                                sx={{ mt: 1, mb: 2, backgroundColor: "#FFFFFF", color: "#000000" }}
+                                sx={{ mt: 1, mb: 2 }}
                                 onClick={handleLoginGoogle}
-                                startIcon={<img src={googleIcon} alt="Google Icon" className="icon" />}  // Using the imported icon
+                                startIcon={<img src={googleIcon} alt="Google Icon" className="icon" />}
                             >
                                 Sign In with Google
                             </Button>
 
                             <Button
+                                className="Button-github"  // Add the class name
                                 fullWidth
                                 variant="contained"
-                                sx={{ mt: 1, mb: 2, color: "#000000", backgroundColor: "#FFFFFF" }}
+                                sx={{ mt: 1, mb: 2 }}
                                 onClick={handleLoginGithub}
-                                startIcon={<img src={githubIcon} alt="GitHub Icon" className="icon" />}  // Using the imported icon
+                                startIcon={<img src={githubIcon} alt="GitHub Icon" className="icon" />}
                             >
                                 Sign In with GitHub
                             </Button>
+
                         </Box>
                     </Box>
                 </Grid>

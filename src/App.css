@@ -120,6 +120,13 @@
   height: 58px;
 }
 
+/* Navbar.css */
+/* App.css or your stylesheet file */
+.let-s-get-started {
+  text-decoration: none;
+  /* Remove underline */
+}
+
 .btn-primary {
   position: relative;
   background: rgb(248, 248, 248);
@@ -127,6 +134,7 @@
   border-image: linear-gradient(90deg, #3864b3 0%, #2f5597 31%, #e9288f 83%);
   border-image-slice: 1;
   border-radius: 0px;
+
   /* Adjust the border-radius to make the edges round */
   padding: 19px 30px;
   display: flex;

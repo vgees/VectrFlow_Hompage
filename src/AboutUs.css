@@ -475,12 +475,12 @@
 }
 
 .about-us .polygon-3 {
-    height: 406px;
+    height: 300px;
     left: 20px;
-    object-fit: cover;
+    object-fit: fill;
     position: absolute;
     top: 7px;
-    width: 398px;
+    width: 500px;
 }
 
 .about-us .frame-21 {
