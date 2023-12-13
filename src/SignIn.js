@@ -1,13 +1,10 @@
 // SignIn.js
 import React from 'react';
-import { Link as RouterLink, useNavigate } from 'react-router-dom';
+
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
-import TextField from '@mui/material/TextField';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
-import Link from '@mui/material/Link';
+
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
@@ -18,17 +15,22 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import googleIcon from './public/google.svg';
 import githubIcon from './public/github.svg';
+
 function SignIn() {
     const theme = createTheme();
-    const navigate = useNavigate();
+
 
     const handleLoginGoogle = async () => {
         const provider = new firebase.auth.GoogleAuthProvider();
         try {
             const result = await firebase.auth().signInWithPopup(provider);
             const user = result.user;
+            const userId = user.uid;
+
+
             console.log("User signed in with Google:", user);
-            navigate('/');
+            console.log(userId)
+            window.location.href = "https://beta.vectrflow.com/"
         } catch (error) {
             console.error("Error during Google sign in:", error);
         }
@@ -39,25 +41,16 @@ function SignIn() {
         try {
             const result = await firebase.auth().signInWithPopup(provider);
             const user = result.user;
+            const userId = user.uid;
+
             console.log("User signed in with GitHub:", user);
-            navigate('/');
+            console.log(userId)
+            window.location.href = "https://beta.vectrflow.com/"
         } catch (error) {
             console.error("Error during GitHub sign in:", error);
         }
     };
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        const data = new FormData(event.currentTarget);
-        console.log({
-            email: data.get('email'),
-            password: data.get('password'),
-        });
-        // You can perform sign-in logic here
-
-        // Redirect to SignUp page
-        navigate('/SignUp');
-    };
 
     return (
         <ThemeProvider theme={theme}>
@@ -93,34 +86,7 @@ function SignIn() {
                         <Typography component="h1" variant="h5">
                             Sign in
                         </Typography>
-                        <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 1 }}>
-                            <TextField
-                                margin="normal"
-                                required
-                                fullWidth
-                                id="email"
-                                label="Email Address"
-                                name="email"
-                                autoComplete="email"
-                                autoFocus
-                            />
-                            <TextField
-                                margin="normal"
-                                required
-                                fullWidth
-                                name="password"
-                                label="Password"
-                                type="password"
-                                id="password"
-                                autoComplete="current-password"
-                            />
-                            <FormControlLabel
-                                control={<Checkbox value="remember" color="primary" />}
-                                label="Remember me"
-                            />
-                            <Button type="submit" fullWidth variant="contained" sx={{ mt: 3, mb: 2 }}>
-                                Sign In
-                            </Button>
+                        <Box sx={{ mt: 1 }}>
                             <Button
                                 fullWidth
                                 variant="contained"
@@ -140,18 +106,6 @@ function SignIn() {
                             >
                                 Sign In with GitHub
                             </Button>
-                            <Grid container>
-                                <Grid item xs>
-                                    <Link href="#" variant="body2">
-                                        Forgot password?
-                                    </Link>
-                                </Grid>
-                                <Grid item>
-                                    <RouterLink to="/SignUp" variant="body2">
-                                        {"Don't have an account? Sign Up"}
-                                    </RouterLink>
-                                </Grid>
-                            </Grid>
                         </Box>
                     </Box>
                 </Grid>

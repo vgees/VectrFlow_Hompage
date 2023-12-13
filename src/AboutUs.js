@@ -15,7 +15,7 @@ const AboutUs = () => {
                         <div className="frame-4">
                             <div className="text-wrapper-3">About Us</div>
                             <p className="p">
-                                Welcome to VectrFlow, where we transform unstructured data into insightful narratives, unlocking the power of information for your Generative AI applications. At VectrFlow, we understand the value of meaningful analysis and are dedicated to guiding our users through every step of the process to ensure relevance and accuracy.
+                                Welcome to VectrFlow, where we transform unstructured data into insightful narratives, unlocking the power of information for your Generative AI applications. <br></br> At VectrFlow, we understand the value of meaningful analysis and are dedicated to guiding our users through every step of the process to ensure relevance and accuracy.
                             </p>
 
                         </div>

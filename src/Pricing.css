@@ -42,7 +42,7 @@ body {
 }
 
 .pricing-table .content .price {
-    background: linear-gradient(to right, #3864B3 0%, #2F5597 31%, #EC73FF 83%);
+    background: linear-gradient(to right, #3864B3 0%, #2F5597 31%, #e9288f 83%);
     width: 90px;
     height: 90px;
     margin: auto;
@@ -60,7 +60,7 @@ body {
 
 .pricing-table .content .price h1 {
     color: #fff;
-    font-size: 30px;
+    font-size: 17px;
     font-weight: 700;
 }
 

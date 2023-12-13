@@ -22,7 +22,10 @@ const Navbar = () => {
     <div className="navbar">
       {/* Logo on the left */}
       <div className="logo-container">
-        <img src={logoPath} alt="Logo" className="logo" />
+        {/* Use the Link component to create a link */}
+        <Link to="/" className="logo-link">
+          <img src={logoPath} alt="Logo" className="logo" />
+        </Link>
       </div>
 
       {/* Links beside the logo */}

@@ -85,7 +85,7 @@
 }
 
 .about-us .text-wrapper-3 {
-    color: #000000;
+    color: #ffffff;
     font-family: "Source Serif Pro-Bold", Helvetica;
     font-size: 96px;
     font-weight: 700;
@@ -97,7 +97,7 @@
 }
 
 .about-us .p {
-    color: #000000;
+    color: #ffffff;
     font-family: "Lato-SemiBold", Helvetica;
     font-size: 24px;
     font-weight: 600;
@@ -105,7 +105,7 @@
     line-height: normal;
     position: relative;
     text-align: center;
-    width: 663px;
+    width: 699px;
 }
 
 .about-us .div-wrapper {
@@ -772,7 +772,7 @@
 }
 
 .about-us .overlap {
-    background-image: url(./public/hello.png);
+    background-image: url(./public/bg.png);
     background-position: 50% 50%;
     background-size: cover;
     height: 530px;

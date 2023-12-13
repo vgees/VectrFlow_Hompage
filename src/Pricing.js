@@ -7,7 +7,7 @@ const PricingTable = () => {
             {/* Pricing Card 1 */}
             <div className="pricing-table gprice-single">
                 <div className="head">
-                    <h4 className="title">Free</h4>
+                    <h4 className="title">Starter</h4>
                 </div>
                 <div className="content">
                     <div className="price">
@@ -21,7 +21,7 @@ const PricingTable = () => {
                     </ul>
                     <div className="sign-up">
                         <a href="#" className="btn bordered radius">
-                            Sign up
+                            Sign up(30-Day Free Trial)
                         </a>
                     </div>
                 </div>
@@ -30,7 +30,7 @@ const PricingTable = () => {
             {/* Pricing Card 2 */}
             <div className="pricing-table gprice-single">
                 <div className="head">
-                    <h4 className="title">Starter</h4>
+                    <h4 className="title">Professional</h4>
                 </div>
                 <div className="content">
                     <div className="price">
@@ -45,7 +45,7 @@ const PricingTable = () => {
                     </ul>
                     <div className="sign-up">
                         <a href="#" className="btn bordered radius">
-                            Sign up (7-day free trial)
+                            Sign up (30-day free trial)
                         </a>
                     </div>
                 </div>
@@ -54,11 +54,11 @@ const PricingTable = () => {
             {/* Pricing Card 3 */}
             <div className="pricing-table gprice-single">
                 <div className="head">
-                    <h4 className="title">Team</h4>
+                    <h4 className="title">Enterprise</h4>
                 </div>
                 <div className="content">
                     <div className="price">
-                        <h1>$899</h1>
+                        <h1>Let's talk</h1>
                     </div>
                     <ul>
                         <li>100,000 runs per month*</li>
@@ -71,7 +71,7 @@ const PricingTable = () => {
                     </ul>
                     <div className="sign-up">
                         <a href="#" className="btn bordered radius">
-                            Sign up (7-day free trial)
+                            Sign up (30-day free trial)
                         </a>
                     </div>
                 </div>
