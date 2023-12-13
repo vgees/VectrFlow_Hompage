@@ -18,6 +18,7 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import googleIcon from './public/google.svg';
 import githubIcon from './public/github.svg';
+
 function SignIn() {
     const theme = createTheme();
     const navigate = useNavigate();
@@ -27,7 +28,11 @@ function SignIn() {
         try {
             const result = await firebase.auth().signInWithPopup(provider);
             const user = result.user;
+            const userId = user.uid;
+            const username = user.displayName;
+            const prov= "Google"
             console.log("User signed in with Google:", user);
+            console.log(userId)
             window.location.href = "https://beta.vectrflow.com/"
         } catch (error) {
             console.error("Error during Google sign in:", error);
@@ -39,7 +44,11 @@ function SignIn() {
         try {
             const result = await firebase.auth().signInWithPopup(provider);
             const user = result.user;
+            const userId = user.uid;
+            const username = user.displayName;
+            const prov = "Github"
             console.log("User signed in with GitHub:", user);
+            console.log(userId)
             window.location.href = "https://beta.vectrflow.com/"
         } catch (error) {
             console.error("Error during GitHub sign in:", error);
