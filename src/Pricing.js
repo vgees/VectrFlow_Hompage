@@ -1,5 +1,5 @@
 import React from 'react';
-import './Pricing.css'; // Ensure to replace 'YourComponent' with the actual file name
+import './Pricing.css';
 
 const PricingTable = () => {
     return (
@@ -14,8 +14,8 @@ const PricingTable = () => {
                         <h1>$0</h1>
                     </div>
                     <div className="sign-up">
-                        <a href="#" className="btn bordered radius">
-                            Sign up(30-Day Free Trial)
+                        <a href="#signup-starter" className="btn bordered radius">
+                            Sign up (30-Day Free Trial)
                         </a>
                     </div>
                     <ul>
@@ -24,7 +24,6 @@ const PricingTable = () => {
                         <li>Individual usage</li>
                         <li>Community support in Discord</li>
                     </ul>
-
                 </div>
             </div>
 
@@ -38,7 +37,7 @@ const PricingTable = () => {
                         <h1>$199</h1>
                     </div>
                     <div className="sign-up">
-                        <a href="#" className="btn bordered radius">
+                        <a href="#signup-professional" className="btn bordered radius">
                             Sign up (30-day free trial)
                         </a>
                     </div>
@@ -49,7 +48,6 @@ const PricingTable = () => {
                         <li>Community support in Discord</li>
                         <li>All data loaders included</li>
                     </ul>
-
                 </div>
             </div>
 
@@ -63,7 +61,7 @@ const PricingTable = () => {
                         <h1>Let's talk</h1>
                     </div>
                     <div className="sign-up">
-                        <a href="#" className="btn bordered radius">
+                        <a href="#signup-enterprise" className="btn bordered radius">
                             Sign up (30-day free trial)
                         </a>
                     </div>
@@ -76,7 +74,6 @@ const PricingTable = () => {
                         <li>All features included</li>
                         <li>All data loaders included</li>
                     </ul>
-
                 </div>
             </div>
         </div>
