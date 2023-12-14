@@ -1,7 +1,7 @@
 import React from "react";
 import "./AboutUs.css";
-import mission from "./public/MissionNew.png";
-import approach from "./public/ApprosvhNew.png";
+import mission from "./public/MisNew.png";
+import approach from "./public/ApNew.png";
 import vfe from "./public/freeflow.png";
 import qa from "./public/quality.svg";
 import collab from "./public/collaboration.svg";
