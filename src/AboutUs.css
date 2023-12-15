@@ -577,14 +577,6 @@
     width: 350px;
 }
 
-.about-us .overlap-group-2 {
-    background-image: url(./public/au.png);
-    background-size: 100% 100%;
-    height: 154px;
-    position: relative;
-    width: 348px;
-}
-
 .about-us .text-wrapper-12 {
     color: #000000;
     font-family: "Lato-SemiBold", Helvetica;
@@ -629,14 +621,6 @@
     width: 253px;
 }
 
-.about-us .overlap-group-3 {
-    background-image: url(./public/au.png);
-    background-size: 100% 100%;
-    height: 112px;
-    position: relative;
-    width: 251px;
-}
-
 .about-us .text-wrapper-13 {
     color: #000000;
     font-family: "Lato-SemiBold", Helvetica;
@@ -658,14 +642,6 @@
     width: 251px;
 }
 
-.about-us .overlap-group-4 {
-    background-image: url(./public/au.png);
-    background-size: 100% 100%;
-    height: 112px;
-    position: relative;
-    width: 251px;
-}
-
 .about-us .group-8 {
     height: 45px;
     left: 0;
@@ -680,32 +656,12 @@
     height: 45px;
 }
 
-.about-us .group-10 {
-    background-image: url(./public/au.png);
-    background-size: 100% 100%;
-    height: 35px;
-    left: 5px;
-    position: relative;
-    top: 5px;
-    width: 35px;
-}
-
 .about-us .group-11 {
     height: 45px;
     left: 1328px;
     position: absolute;
     top: 342px;
     width: 45px;
-}
-
-.about-us .group-12 {
-    background-image: url(./public/au.png);
-    background-size: 100% 100%;
-    height: 35px;
-    left: 5px;
-    position: relative;
-    top: 5px;
-    width: 35px;
 }
 
 .about-us .frame-25 {

@@ -3,17 +3,17 @@
   "name": "Create React App Sample",
   "icons": [
     {
-      "src": "VectrFlow_logo.ico",
+      "src": "VectrFlow_icon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "VectrFlow_logo.png",
+      "src": "VectrFlow_icon.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "VectrFlow_logo.png",
+      "src": "VectrFlow_icon.png",
       "type": "image/png",
       "sizes": "512x512"
     }

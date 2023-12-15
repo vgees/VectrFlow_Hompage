@@ -6,7 +6,7 @@ import emb from ".//public/embeddings.png";
 import pipe from ".//public/pipe.png";
 import scale from ".//public/scale.png";
 import sync from ".//public/sync.png";
-import home from ".//public/VectrFlow2.png";
+import home from ".//public/VectrFlow.png";
 import React from "react";
 import { Link } from "react-router-dom";
 import "./App.css";
@@ -45,7 +45,7 @@ const App = () => (
       </div>
       <div className="hero-wrapper-image">
         <div className="hero-wrapper-image-center">
-          <img className="web-development-1" src={home} alt="Hero Image" />
+          <img className="web-development-1" src={home} alt="VectrFlow Image" />
         </div>
       </div>
     </div>

@@ -2,7 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import logoPath from "./public/Vectrflow.png";
+import logoPath from "./public/VectrFlow_logo.png";
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth'
 import 'firebase/compat/firestore';
